@@ -1,20 +1,22 @@
-# Operate First template for repositories
+# Data Driven Development - D^3
 
-Derive new repositories from this template
+## Why
 
-List of featurese:
+Similar to test-driven-development.
 
-## License
+You must be able to answer questions quick. I.e. combining different data sources, going back in time, changing the granularity.
 
-This template ensures new repos are created compliant with [ADR 0001](https://www.operate-first.cloud/blueprints/blueprint/docs/adr/0001-use-gpl3-as-license.md) and use GNU GPL v3 license.
+Be able to change the visualization: prototype in notebooks, create a dashboard, create a PDF report.
 
-## AI-CoE CI Github application
+## Template Features
+
+### AI-CoE CI Github application
 
 AI-CoE CI provides easy and quick integration for build pipelines and checks for pull requests.
 
 An empty [`.aicoe-ci.yaml`](.aicoe-ci.yaml) is created here, disabling all checks via this CI provider by default. Documentation can be found [here](https://github.com/AICoE/aicoe-ci/).
 
-## Prow CI
+### Prow CI
 
 Prow is a CI provider developed for Kubernetes needs. Provides chat-ops management of pull requests, issues and declarative management for labels, branches and many more.
 
@@ -22,7 +24,7 @@ We host our own deployment of Prow in Operate First available at [https://prow.o
 
 Supported commands are listed [here](https://prow.operate-first.cloud/command-help). We have also enabled Prow to consume on-repository configuration files. You can specify your config in [`.prow.yaml`](.prow.yaml). Additional centralized configuration can be found in the [thoth-application repository](https://github.com/thoth-station/thoth-application/tree/master/prow/overlays/cnv-prod).
 
-## Pre-commit
+### Pre-commit
 
 By extension to Prow, we define a default pre-commit config for new repositories. Default hook configuration can be found in [`.pre-commit-config.yaml`](.pre-commit-config.yaml). Pre-commit is executed via Prow, see [`.prow.yaml`](.prow.yaml) for details.
 
