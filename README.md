@@ -1,35 +1,19 @@
 # Data Driven Development - D^3
 
-## Why
+## Overview
 
-Similar to test-driven-development.
+In today’s software development landscape, **data** plays a powerful role, which has led to the rise of the data driven development paradigm. The purpose of this repository is to consolidate and provide all the resources, guides and documentation necessary to foster data driven development.
 
-You must be able to answer questions quick. I.e. combining different data sources, going back in time, changing the granularity.
+Good data driven development should not only collect lots of data and make them available, but we also need to aggregate the information in meaningful ways. The data-driven approach, particularly with well-defined benchmarks and metrics provides greater visibility into in-progress work being done by teams and also helps in important decision making processes. This allows each contributor to see the impact of their individual effort on overall project success (or failure) and also enables teams to effectively measure the level of success.
 
-Be able to change the visualization: prototype in notebooks, create a dashboard, create a PDF report.
+Similar to test driven development, data driven development means that you must be able to answer questions quick, i.e. combining different data sources, going back in time, changing the granularity of data, being able to change the visualizations such as prototypying in Jupyter notebooks vs creating dashboards vs generating PDF reports.
 
-## Template Features
+## Structure
 
-### AI-CoE CI Github application
+The repository is organized into the following directories:
 
-AI-CoE CI provides easy and quick integration for build pipelines and checks for pull requests.
+* [`data-presentation`](https://github.com/operate-first/data-driven-development/tree/main/data-presentation) - This folder comprises of documentation/guides and best practices on how data can be represented in different ways by using various tools such as creating dashboards in [Grafana](https://grafana.com/) or [Superset](https://superset.apache.org/), developing data visualizations using [Jupyter notebooks](https://jupyter.org/) etc.
 
-An empty [`.aicoe-ci.yaml`](.aicoe-ci.yaml) is created here, disabling all checks via this CI provider by default. Documentation can be found [here](https://github.com/AICoE/aicoe-ci/).
+* [`data-sources`](https://github.com/operate-first/data-driven-development/tree/main/data-sources) - This folder comprises of documentation and guides for various data sources used in the team such as [Prometheus](https://prometheus.io/), GitHub etc, what type of data is collected from these sources and in what context these data sources can be used.
 
-### Prow CI
-
-Prow is a CI provider developed for Kubernetes needs. Provides chat-ops management of pull requests, issues and declarative management for labels, branches and many more.
-
-We host our own deployment of Prow in Operate First available at [https://prow.operate-first.cloud/](https://prow.operate-first.cloud/).
-
-Supported commands are listed [here](https://prow.operate-first.cloud/command-help). We have also enabled Prow to consume on-repository configuration files. You can specify your config in [`.prow.yaml`](.prow.yaml). Additional centralized configuration can be found in the [thoth-application repository](https://github.com/thoth-station/thoth-application/tree/master/prow/overlays/cnv-prod).
-
-### Pre-commit
-
-By extension to Prow, we define a default pre-commit config for new repositories. Default hook configuration can be found in [`.pre-commit-config.yaml`](.pre-commit-config.yaml). Pre-commit is executed via Prow, see [`.prow.yaml`](.prow.yaml) for details.
-
-We enable yamllint hook by default, since most of our repositories use yaml files extensively. Default configuration for this hook is located at [`yamllint-config.yaml`](yamllint-config.yaml).
-
-To install and enable pre-commit locally please follow the instructions [here](https://pre-commit.com/#quick-start).
-
-It is advised for all contributors to enable pre-commit git hook via `pre-commit install` after cloning any repo within Operate First.
+* [`notebooks`](https://github.com/operate-first/data-driven-development/tree/main/notebooks) - This folder comprises of Jupyter notebooks providing examples on how to interact with the different data sources and perform analysis on top of the data.
