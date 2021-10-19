@@ -12,3 +12,15 @@ replacement for it).
 The components and workflows of Kebechet can be found in the architecture schema below:
 
 ![Kebechet Schema](../../assets/images/kebechet-schema.png)
+
+## Sequence Diagrams
+
+The two images below show two sequence diagrams of the behaviour of Kebechet in two cases:
+
+- when some user interacts with the GitHub App (external-trigger).
+
+![Kebechet Schema](../../assets/images/kebechet-schema-external-trigger.png)
+
+- when internal components triggers learning of new knowledge and share of this knowledge with users (internal trigger)
+
+![Kebechet Schema](../../assets/images/kebechet-schema-internal-trigger-package-release.png)
