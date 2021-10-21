@@ -17,3 +17,5 @@ The repository is organized into the following directories:
 * [`data-sources`](https://github.com/operate-first/data-driven-development/tree/main/data-sources) - This folder comprises of documentation and guides for various data sources used in the team such as [Prometheus](https://prometheus.io/), GitHub etc, what type of data is collected from these sources and in what context these data sources can be used.
 
 * [`notebooks`](https://github.com/operate-first/data-driven-development/tree/main/notebooks) - This folder comprises of Jupyter notebooks providing examples on how to interact with the different data sources and perform analysis on top of the data.
+
+* [`examples`](https://github.com/AICoE/data-driven-development/tree/main/examples) - This folder comprises of monitoring guides for different examples of applications and services.
