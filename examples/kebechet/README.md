@@ -24,3 +24,5 @@ The two images below show two sequence diagrams of the behaviour of Kebechet in 
 - when internal components triggers learning of new knowledge and share of this knowledge with users (internal trigger)
 
 ![Kebechet Schema](../../assets/images/kebechet-schema-internal-trigger-package-release.png)
+
+As you can see, there are different workflows that are triggered to manage your Python dependencies using Thoth's recommendation system. You can request directly for guidance to the service (external trigger) or your repository will be automatically updated with the optimal Python software stack for your project without you having to lift your finger (internal trigger). You can have a detailed description of all the components involved into Kebechet [here](./tooling.md).
