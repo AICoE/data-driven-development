@@ -1,0 +1,20 @@
+format: jb-book
+root: README
+parts:
+  - caption: Data Sources
+    chapters:
+    - file: data-sources/prometheus
+  - caption: Data Presentation
+    chapters:
+    - file: data-presentation/grafana
+    - file: data-presentation/superset
+  - caption: Monitoring Applications Guide
+    chapters:
+    - file: examples/README
+    - file: examples/kebechet/README
+      sections:
+      - file: examples/kebechet/tooling
+      - file: examples/kebechet/metrics
+      - file: examples/kebechet/collecting_and_storing_metrics
+      - file: examples/kebechet/accessing_metrics
+      - file: examples/kebechet/alerting
