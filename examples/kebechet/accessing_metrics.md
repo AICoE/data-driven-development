@@ -1,4 +1,4 @@
-# Accessing and Analyzing Metrics
+# Accessing Metrics
 
 Once we have the metrics collected and stored, to better explore and analyze them, we should be able to programmatically access the metrics via relevant tools such as Jupyter notebooks.
 
