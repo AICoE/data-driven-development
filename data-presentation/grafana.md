@@ -8,7 +8,7 @@
 
 Grafana can be installed on many different operating systems. For a list of the minimum hardware and software requirements, as well as instructions on installing Grafana, refer to [Install Grafana](https://grafana.com/docs/grafana/latest/installation/).
 
-We have [Grafana](https://grafana.com/) deployed in one of the [Operate First](https://www.operate-first.cloud/) instances and it can be accessed [here](https://console-openshift-console.apps.smaug.na.operate-first.cloud/k8s/ns/opf-monitoring/routes/grafana). You can follow the instructions for accessing and adding dashboards [here](https://www.operate-first.cloud/users/apps/docs/odh/grafana/README.md).
+We have [Grafana](https://grafana.com/) deployed in one of the [Operate First](https://www.operate-first.cloud/) instances and it can be accessed [here](https://grafana.operate-first.cloud/). You can follow the instructions for accessing and adding dashboards [here](https://www.operate-first.cloud/hitchhikers-guide/apps/docs/grafana/add_grafana_dashboard.md).
 
 ### Step 2: Log In
 
@@ -75,4 +75,4 @@ Copy the JSON model for the dashboard and insert into the config map YAML and co
 
 ![Grafana JSON](../assets/images/gf-json.png)
 
-Make a Pull Request for this dashboard in GitHub. You can follow the instructions [here](https://www.operate-first.cloud/users/apps/docs/odh/grafana/add_grafana_dashboard.md) for adding dashboards to the [Operate First Grafana](https://console-openshift-console.apps.smaug.na.operate-first.cloud/k8s/ns/opf-monitoring/routes/grafana) instance.
+Make a Pull Request for this dashboard in GitHub. You can follow the instructions [here](https://www.operate-first.cloud/hitchhikers-guide/apps/docs/grafana/add_grafana_dashboard.md) for adding dashboards to the [Operate First Grafana](https://grafana.operate-first.cloud/) instance.
