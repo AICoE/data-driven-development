@@ -37,10 +37,12 @@ Based on the type of application, we can define relevant metrics that help devel
 | Percentage of adviser requests from Kebechet failed |  | number of failed adviser per source_type=KEBECHET | Operations | Ceph (processed by advise-reporter) |
 | Number of Kafka messages sent per internal trigger to schedule Kebechet administrator |  |  | Operations | Kafka producers (e.g. package-release) |
 | Number of Kebechet workflows scheduled by workflow-controller |  |  | Operations | Thoth investigator (Kafka consumer) |
-| Database up |  |  | Operations | exposed by Thoth metrics-exporter |
-| Kafka up |  |  | Operations | exposed by Thoth metrics-exporter |
-| Ceph up |  |  | Operations | exposed by Thoth metrics-exporter |
-| User-API up |  |  | Operations | collected from Openshift Monitoring |
-| Thoth Investigator up |  |  | Operations | collected from Openshift Monitoring |
-| Thoth workflow controller (backend-namespace) |  |  | Operations | collected from Openshift Monitoring |
-| Thoth workflow controller (middletier-namespace) |  |  | Operations | collected from Openshift Monitoring |
+| Rate of failures of Kebechet workflows |  |  | Operations | Argo Workflow Controller |
+| Rate of errors of Kebechet workflows |  |  | Operations | Argo Workflow Controller |
+| Database up | Verify if database is up |  | Operations | exposed by Thoth metrics-exporter |
+| Kafka up | Verify if Kafka is up |  | Operations | exposed by Thoth metrics-exporter |
+| Ceph up | Verify if Ceph is up |  | Operations | exposed by Thoth metrics-exporter |
+| User-API up | Verify if User-API is up |  | Operations | collected from Openshift Monitoring |
+| Thoth Investigator up | Verify if Thoth Investigator is up |  | Operations | collected from Openshift Monitoring |
+| Thoth workflow controller (backend-namespace) | Verify if Thoth workflow controller (backend-namespace) is up |  | Operations | collected from Openshift Monitoring |
+| Thoth workflow controller (middletier-namespace) | Verify if Thoth workflow controller (middletier-namespace) is up | argo_workflows_status_counter | Operations | collected from Openshift Monitoring |
