@@ -61,9 +61,9 @@ Here is an example of a PromQL query that finds the `sum` of all HTTP requests g
 
 Prometheus metrics can also be programmatically accessed via API client libraries. We have `prometheus-api-client`, a Python wrapper for the Prometheus HTTP API along with additional functionality for further metric processing. This API client can be used to fetch, query and perform metric processing within Python supported environments such as Jupyter notebooks and is particularly useful for Data Scientists who are interested in examining these time series type of data.
 
-* [API Client](https://github.com/AICoE/prometheus-api-client-python)
+* [API Client](https://github.com/4n4nd/prometheus-api-client-python)
 
-* [Example Jupyter Notebook](https://github.com/AICoE/prometheus-api-client-python/blob/master/examples/MetricsList_example.ipynb) - This example Jupyter notebook explains the API client library and its functions supported
+* [Example Jupyter Notebook](https://github.com/4n4nd/prometheus-api-client-python/blob/master/examples/MetricsList_example.ipynb) - This example Jupyter notebook explains the API client library and its functions supported
 
 * [Tutorial](https://learn.openshift.com/ai-machine-learning/prometheus-api-client/) - Interactive tutorial on using the Prometheus API client library
 
